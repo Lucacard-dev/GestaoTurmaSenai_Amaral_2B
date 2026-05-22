@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "cores.css";
+@font-face{
+    font-family:Mario;
+    src: url(/css/fontes/SuperMario256.ttf);
+}
+
+
+body{
+    color: var(--azure-mist);
+    font-family: mario;
+    background-color: var(--smart-blue);
+
+}
