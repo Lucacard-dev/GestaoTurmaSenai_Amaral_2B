@@ -25,6 +25,9 @@
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Noticias</a></li>
             </ul>
+            <h1> Lucas Inacio </h1>
+
+            <h2> A vida real é offline</h2>
         </nav>
     </header>
     <div>
@@ -40,27 +43,33 @@
                     <li> Otavio</li>
                     <li> Nycole</li>
                     <li> Gabriel</li>
-                    <li> Inácio </li>
+                    <li> Maria </li>
                 </ul>
-
+                <footer>
+                    <div> Quantidades de alunos
+                        <p id="qtdAlunosLellisItoA"><mark>4</mark></p>
+                    </div>
+                </footer>
                 <h3> TURMA - AMARAL - 2B</h3>
                 <ul>
                     <li> Kauan</li>
                     <li> Kevin</li>
-                    <li> Kaiqui</li>
+                    <li> Kaiqui
+                    <li> Inácio</li>
+                    </li>
                 </ul>
-
+                <footer>
+                    <div> Quantidades de Alunos
+                        <p id="qtdAlunosLellisItoA"><mark>4</mark></p>
+                    </div>
+                </footer>
             </section>
         </div>
 
     </div>
 
     </div>
-
-    <h1> Lucas Inacio </h1>
-
-    <h2> A vida real é offline</h2>
-<br></br>
+    <br></br>
 
 
     <section headingoffset="1">
@@ -76,12 +85,14 @@
                     <ul class="lista-alunos lellis" id="alunoslellisItoA">
                         <li>Maísa</li>
                         <li>Leandro</li>
-                        <li>Junior</li>
+                        <li>Junior
+                        <li>Guilheme</li>
+                        </li>
                     </ul>
                 </div>
                 <footer>
                     <div> Quantidades de Alunos:
-                        <p id="qtdAlunosLellisItoA"><mark>3</mark></p>
+                        <p id="qtdAlunosLellisItoA"><mark>4</mark></p>
                     </div>
                 </footer>
             </section>
@@ -94,16 +105,34 @@
                         <li>Julia</li>
                         <li>Alberto</li>
                         <li>Andrey</li>
+                        <li>Romário</li>
                     </ul>
                 </div>
                 <footer>
                     <div> Quantidades de Alunos:
-                        <p id="qtdAlunosLellisItoA"><mark>3</mark></p>
+                        <p id="qtdAlunosLellisItoA"><mark>4</mark></p>
                     </div>
                 </footer>
             </section>
         </section>
     </section>
     </div>
+    <script>
+        function contarQuantidadeAlunosTurma(lista, qtd) {
+
+            const listaAlunos = document.getElementById(lista);
+
+            const quantidade = listaAlunos.querySelectorAll("li").length;
+
+            document.getElementById(qtd).textContent = quantidade;
+
+        }
+
+        contarQuantidadeAlunosTurma('alunosAmaral_A', 'qtdAlunosAmaral_A');
+        contarQuantidadeAlunosTurma('alunosAmaral_B', 'qtdAlunosAmaral_B');
+        contarQuantidadeAlunosTurma('alunosLellis_A', 'qtdAlunosLellis_A');
+        contarQuantidadeAlunosTurma('alunosLellis_B', 'qtdAlunosLellis_B');
+
+    </script>
 </body>
 </html>
